@@ -6,8 +6,6 @@ school_name = input("Enter your school name: ")
 favorite_programming_language = input("Enter your favorite programming languge: ")
 
 # Display the information back in a formatted and readable way
-print("Full Name:", full_name)
-print("Age:", age)
-print("Course:", course)
-print("School Name:", school_name)
-print("Favorite Programming Language:", favorite_programming_language)
+print("\nHello,", full_name + "!")
+print("You are", age, "years old, taking", course, "at", school_name + ".")
+print("Your favorite programming languange is", favorite_programming_language + ".")

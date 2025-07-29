@@ -25,13 +25,13 @@ for char in special_char:
 
 # check the password if it contains uppercase
 for char in password:
-    if char.isupper():
+    if char >= 'A' and char <= 'Z':
         pass_stegnth += 1
         break
 
 # check the password if it contains lowercase
 for char in password:
-    if char.islower():
+    if char >= 'a' and char <= 'z':
         pass_stegnth += 1
         break
 

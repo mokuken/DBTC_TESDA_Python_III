@@ -19,8 +19,8 @@ if is_manang_here == "yes":
         print("-", food, "-", "₱" + str(price))
     
     
+    selected = input("\nAno pa baklon mo? (type 'wala na' kon tapos ka): ")
     while True:
-        selected = input("Ano pa baklon mo? (type 'wala na' kon tapos ka): ")
 
         if selected == "wala na":
             break
@@ -28,6 +28,7 @@ if is_manang_here == "yes":
             pieces = int(input("Pila ka '" + selected + "'?: "))
             if selected in menu:
                 basket[selected] = pieces
+            selected = input("Ano pa? (type 'wala na' kon tapos ka): ")
 
     print("\nMuni tanan imo ginbakal ha:")
     for food, pieces in basket.items():

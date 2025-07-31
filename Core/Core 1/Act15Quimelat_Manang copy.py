@@ -7,7 +7,6 @@ menu = {
 }
 
 basket = {}
-total_price = 0
 
 is_manang_here = input("Is Manang here? (yes/no): ")
 
@@ -18,10 +17,9 @@ if is_manang_here == "yes":
     for food, price in menu.items():
         print("-", food, "-", "₱" + str(price))
     
-    
+
     selected = input("\nAno pa baklon mo? (type 'wala na' kon tapos ka): ")
     while True:
-
         if selected == "wala na":
             break
         else:
@@ -30,6 +28,7 @@ if is_manang_here == "yes":
                 basket[selected] = pieces
             selected = input("Ano pa? (type 'wala na' kon tapos ka): ")
 
+    total_price = 0
     print("\nMuni tanan imo ginbakal ha:")
     for food, pieces in basket.items():
         print("-", str(pieces), "x" , food)

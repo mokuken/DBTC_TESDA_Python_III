@@ -20,8 +20,7 @@ if is_manang_here == "yes":
     
     
     selected = input("\nAno pa baklon mo? (type 'wala na' kon tapos ka): ")
-    while True:
-
+    while True: 
         if selected == "wala na":
             break
         else:

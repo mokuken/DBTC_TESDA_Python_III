@@ -10,9 +10,9 @@ class Editor(Role):
     def get_access(self):
         return "Can edit"
 
-class Remover(Role):
+class Deleter(Role):
     def get_access(self):
-        return "Can remove"
+        return "Can delete"
 
 class Viewer(Role):
     def get_access(self):
@@ -28,4 +28,4 @@ class User:
     
 print(User("Alice", Admin()).access())
 print(User("Bob", Viewer()).access())
-print(User("Jack", Remover()).access())
+print(User("Jack", Deleter()).access())

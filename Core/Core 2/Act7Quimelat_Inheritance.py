@@ -24,7 +24,7 @@ student.study()
 
 # Task 2: Problem Solving with Inheritanc
 
-# # Create a base class Animal and two derived classes Dog and Cat.
+# Create a base class Animal and two derived classes Dog and Cat.
 class Animal:
     # Create a constructor for the base class Animal
     def __init__(self, name):
